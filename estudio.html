@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudio | Pixelbrasa Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-controller me-2"></i>Pixelbrasa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+              aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+              <li><a class="dropdown-item" href="juegos.html">Juegos</a></li>
+              <li><a class="dropdown-item active" aria-current="page" href="estudio.html">Estudio</a></li>
+              <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <section class="destacado p-4 p-md-5">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-md-6">
+          <h1 class="seccion-titulo">Un estudio pequeño, mundos enormes</h1>
+          <p>Somos un estudio independiente de Montevideo. Diseñamos juegos con historias cuidadas y mecánicas simples de aprender, para que cada persona pueda encontrar una aventura que disfrutar.</p>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Más de 10 juegos publicados.</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Un equipo de 15 personas.</li>
+            <li><i class="bi bi-check-circle-fill me-2"></i>Juegos disponibles en PC, consolas y móviles.</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="estudio.jpg" alt="Equipo de Pixelbrasa trabajando en el estudio">
+        </div>
+      </div>
+    </section>
+    <section class="py-5 text-center">
+      <h2 class="seccion-titulo">Creamos para jugar en compañía</h2>
+      <p class="mx-auto mb-4" style="max-width: 60ch;">Nos inspira combinar arte, tecnología y buenas historias. Cada proyecto nace de la colaboración entre artistas, programadores y diseñadores.</p>
+      <a href="juegos.html" class="btn btn-brasa btn-lg">Explorar nuestros juegos</a>
+    </section>
+  </main>
+
+  <footer class="pt-4 pb-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+      <p class="small mb-0"><i class="bi bi-controller me-2"></i>Pixelbrasa Studio · Videojuegos independientes hechos en Uruguay.</p>
+      <p class="small mb-0">&copy; 2026 Pixelbrasa Studio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

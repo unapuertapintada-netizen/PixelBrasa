@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juegos | Pixelbrasa Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-controller me-2"></i>Pixelbrasa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+              aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+              <li><a class="dropdown-item active" aria-current="page" href="juegos.html">Juegos</a></li>
+              <li><a class="dropdown-item" href="estudio.html">Estudio</a></li>
+              <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <header class="text-center mb-5">
+      <h1 class="seccion-titulo">Nuestros juegos</h1>
+      <p class="lead">Tres mundos distintos, hechos a mano por un equipo pequeño.</p>
+    </header>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="ceniza-estelar.jpg" class="card-img-top" alt="Nave espacial entre ruinas en Ceniza Estelar">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h4">Ceniza Estelar</h2>
+            <p class="plataforma"><i class="bi bi-rocket-takeoff me-1"></i>Acción · PC y consolas</p>
+            <p class="card-text">Pilotea y mejora tu nave entre las ruinas de una galaxia olvidada. Explora sistemas desconocidos, reúne piezas y reconstruye tu hogar.</p>
+            <a href="contacto.html" class="btn btn-brasa mt-auto">Pedir información</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="raices-del-bosque.jpg" class="card-img-top" alt="Héroes alrededor de una semilla de luz en Raíces del Bosque">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h4">Raíces del Bosque</h2>
+            <p class="plataforma"><i class="bi bi-people me-1"></i>Aventura · Cooperativo</p>
+            <p class="card-text">Resuelve acertijos con hasta tres amigos y devuelve la vida al bosque en una aventura para jugar en línea o en el mismo sofá.</p>
+            <a href="contacto.html" class="btn btn-brasa mt-auto">Pedir información</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100">
+          <img src="neon404.jpg" class="card-img-top" alt="Ciudad futurista en Neón 404">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h4">Neón 404</h2>
+            <p class="plataforma"><i class="bi bi-phone me-1"></i>Puzzle · Móvil</p>
+            <p class="card-text">Hackea la red de una ciudad futurista con puzzles rápidos de cinco minutos. Cada conexión revela una nueva parte de la historia.</p>
+            <a href="contacto.html" class="btn btn-brasa mt-auto">Pedir información</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pt-4 pb-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+      <p class="small mb-0"><i class="bi bi-controller me-2"></i>Pixelbrasa Studio · Videojuegos independientes hechos en Uruguay.</p>
+      <p class="small mb-0">&copy; 2026 Pixelbrasa Studio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

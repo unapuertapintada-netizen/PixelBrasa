@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Pixelbrasa Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-controller me-2"></i>Pixelbrasa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+              aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+              <li><a class="dropdown-item" href="juegos.html">Juegos</a></li>
+              <li><a class="dropdown-item" href="estudio.html">Estudio</a></li>
+              <li><a class="dropdown-item active" aria-current="page" href="contacto.html">Contacto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <section class="form-box p-4 p-md-5 mx-auto" style="max-width: 720px;">
+      <h1 class="seccion-titulo text-center">Escríbenos</h1>
+      <p class="text-center mb-4">Completa el formulario y te respondemos en 48 horas.</p>
+      <form id="formContacto" class="needs-validation" novalidate>
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required minlength="3">
+            <div class="invalid-feedback">Escribe tu nombre (mínimo 3 letras).</div>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required>
+            <div class="invalid-feedback">Escribe un correo válido.</div>
+          </div>
+          <div class="col-12">
+            <label for="asunto" class="form-label">Motivo de consulta</label>
+            <select class="form-select" id="asunto" required>
+              <option value="" selected disabled>Elige un motivo</option>
+              <option>Consulta sobre un juego</option>
+              <option>Soporte técnico</option>
+              <option>Trabajar con nosotros</option>
+              <option>Prensa y colaboraciones</option>
+            </select>
+            <div class="invalid-feedback">Elige un motivo.</div>
+          </div>
+          <div class="col-12">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required minlength="10"></textarea>
+            <div class="invalid-feedback">Escribe un mensaje de al menos 10 caracteres.</div>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-brasa btn-lg px-5">Enviar mensaje</button>
+          </div>
+          <div class="col-12">
+            <div id="exito" class="alert alert-success d-none mb-0" role="status">Mensaje enviado. Gracias por escribirnos.</div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pt-4 pb-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+      <p class="small mb-0"><i class="bi bi-controller me-2"></i>Pixelbrasa Studio · Videojuegos independientes hechos en Uruguay.</p>
+      <p class="small mb-0">&copy; 2026 Pixelbrasa Studio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

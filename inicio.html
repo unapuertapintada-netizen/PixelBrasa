@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bienvenido | Pixelbrasa Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+    .portada-inicio { position: relative; min-height: 78vh; display: flex; align-items: center; color: #fff;
+      background: url('estudio.jpg') center / cover; }
+    .portada-inicio::before { content: ""; position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(28,22,54,.7), rgba(28,22,54,.95)); backdrop-filter: blur(6px); }
+    .portada-inicio .container { position: relative; z-index: 1; }
+    .portada-inicio h1 { font-weight: 800; font-size: clamp(2.5rem, 8vw, 5rem); }
+    .portada-inicio .logo { color: var(--brasa); font-size: clamp(3rem, 8vw, 4.5rem); }
+    .portada-inicio p { font-size: clamp(1.05rem, 2vw, 1.3rem); max-width: 45ch; }
+
+    .acceso { text-decoration: none; color: inherit; display: block; height: 100%; }
+    .acceso .card { transition: transform .2s ease, box-shadow .2s ease; }
+    .acceso:hover .card, .acceso:focus-visible .card { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(58,42,110,.25); }
+    .acceso:focus-visible { outline: 3px solid var(--brasa); outline-offset: 3px; border-radius: .75rem; }
+    .acceso .icono { font-size: 2.5rem; color: var(--brasa); }
+    @media (prefers-reduced-motion: reduce) { .acceso .card { transition: none; } }
+  </style>
+</head>
+<body>
+
+  <header class="portada-inicio">
+    <div class="container py-5 text-center text-md-start">
+      <i class="bi bi-controller logo d-block mb-2"></i>
+      <h1>Pixelbrasa Studio</h1>
+      <p class="mb-4 mx-auto mx-md-0">Videojuegos independientes hechos en Uruguay. Elige a dónde quieres ir.</p>
+      <a href="index.html" class="btn btn-brasa btn-lg px-5">Entrar al sitio</a>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <h2 class="seccion-titulo text-center mb-5">¿Qué quieres ver?</h2>
+
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="index.html" class="acceso">
+          <div class="card h-100 text-center p-4">
+            <i class="bi bi-house-door icono mb-3"></i>
+            <h3 class="h5 card-title">Inicio</h3>
+            <p class="card-text mb-0">La página principal con las novedades del estudio.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="juegos.html" class="acceso">
+          <div class="card h-100 text-center p-4">
+            <i class="bi bi-joystick icono mb-3"></i>
+            <h3 class="h5 card-title">Juegos</h3>
+            <p class="card-text mb-0">Ceniza Estelar, Raíces del Bosque y Neón 404.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="estudio.html" class="acceso">
+          <div class="card h-100 text-center p-4">
+            <i class="bi bi-people icono mb-3"></i>
+            <h3 class="h5 card-title">Estudio</h3>
+            <p class="card-text mb-0">Conoce al equipo y cómo creamos nuestros juegos.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <a href="contacto.html" class="acceso">
+          <div class="card h-100 text-center p-4">
+            <i class="bi bi-envelope icono mb-3"></i>
+            <h3 class="h5 card-title">Contacto</h3>
+            <p class="card-text mb-0">Escríbenos para consultas, soporte o trabajar con nosotros.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pt-4 pb-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+      <p class="small mb-0"><i class="bi bi-controller me-2"></i>Pixelbrasa Studio · Videojuegos independientes hechos en Uruguay.</p>
+      <p class="small mb-0">&copy; 2026 Pixelbrasa Studio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
